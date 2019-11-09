@@ -28,7 +28,7 @@
         blocks: [
             ['w', 'Open google popup', 'ogoogs'],
             ['w', 'Open project with ID %n', 'gotox'],
-            ['w', 'Open packaged project with ID %n, 'goproj'],
+            ['w', 'Open packaged project with ID %n', 'goproj'],
         ]
     };
 
