@@ -42,8 +42,7 @@
             ['w', 'Open packaged project with ID %n', 'goproj'],
             ['w', 'Donload file with name %s', 'dload'],
         ]
-        url: "https://retropieman.github.io/ForkphorusEXT/",
-        displayName: "Pop-ups"
+        
     };
 
     // Register the extension
