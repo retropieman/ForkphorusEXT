@@ -28,6 +28,10 @@
         var to = of - 1;
         return str[to];
     };
+    ext.enco = function(toen){
+        var x = window.btoa(toen);
+        return x;
+    };
     
     
 
@@ -38,6 +42,7 @@
             ['w', 'Open project with ID %n', 'gotox'],
             ['w', 'Open packaged project with ID %n', 'goproj'],
             ['r', 'Get word %n of %s', 'getword', 1, "Hello World"],
+            ['r', 'Encode %s to base64', 'enco', 'test']
             
         ]
         
