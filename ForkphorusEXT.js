@@ -37,7 +37,7 @@
             ['w', 'Open google popup', 'ogoogs'],
             ['w', 'Open project with ID %n', 'gotox'],
             ['w', 'Open packaged project with ID %n', 'goproj'],
-            ['w', 'Get word %n of %s', 'getword', 1, "Hello World"],
+            ['r', 'Get word %n of %s', 'getword', 1, "Hello World"],
             
         ]
         
