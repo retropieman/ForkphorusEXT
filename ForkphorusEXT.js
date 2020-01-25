@@ -25,8 +25,8 @@
     };
     ext.getword = function(of, instr){
         var str = instr.trim().split(" ");
-        
-        return str[of];
+        var to = of - 1;
+        return str[to];
     };
     
     
