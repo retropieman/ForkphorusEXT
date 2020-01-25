@@ -23,6 +23,11 @@
         
         window.open('https://forkphorus.github.io/app.html?id=' + xid,'1573258053476','width=700,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;
     };
+    ext.getword = function(of, instr){
+        var str = instr.trim().split(" ");
+        str = str[of];
+        retrun str;
+    };
     
     
 
@@ -32,6 +37,7 @@
             ['w', 'Open google popup', 'ogoogs'],
             ['w', 'Open project with ID %n', 'gotox'],
             ['w', 'Open packaged project with ID %n', 'goproj'],
+            ['w', 'Get word %n of %s', 'getword', 1, "Hello World"],
             
         ]
         
