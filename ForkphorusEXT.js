@@ -28,26 +28,14 @@
         var to = of - 1;
         return str[to];
     };
-    ext.b64 = function(toen){
+    ext.b64 = function(do, toen){
         var x = window.btoa(toen);
         return x;
     };
     
     
 
-    // Block and block menu descriptions
-    var descriptor = {
-        blocks: [
-            ['w', 'Open google popup', 'ogoogs'],
-            ['w', 'Open project with ID %n', 'gotox'],
-            ['w', 'Open packaged project with ID %n', 'goproj'],
-            ['r', 'Get word %n of %s', 'getword', 1, "Hello World"],
-            ['r', 'Encode %s to base64', 'b64', 'test']
-            
-        ]
-        
-    };
-
+  
     // Register the extension
     ScratchExtensions.register('ForkphorusEXT', descriptor, ext);
 })({});
@@ -57,7 +45,7 @@ var descriptor = {
             ['w', 'Open project with ID %n', 'gotox'],
             ['w', 'Open packaged project with ID %n', 'goproj'],
             ['r', 'Get word %n of %s', 'getword', 1, "Hello World"],
-            ['r', 'Encode %s to base64', 'b64', 'test']
+            ['r', '%s.decenc %s to base64', 'b64', 'test']
     ],
     menus: {
         decenc: ['encode', 'decode'],
