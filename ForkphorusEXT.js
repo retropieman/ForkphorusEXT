@@ -28,7 +28,7 @@
         var to = of - 1;
         return str[to];
     };
-    ext.enco = function(toen){
+    ext.b64 = function(toen){
         var x = window.btoa(toen);
         return x;
     };
@@ -42,7 +42,7 @@
             ['w', 'Open project with ID %n', 'gotox'],
             ['w', 'Open packaged project with ID %n', 'goproj'],
             ['r', 'Get word %n of %s', 'getword', 1, "Hello World"],
-            ['r', 'Encode %s to base64', 'enco', 'test']
+            ['r', 'Encode %s to base64', 'b64', 'test']
             
         ]
         
@@ -51,3 +51,18 @@
     // Register the extension
     ScratchExtensions.register('ForkphorusEXT', descriptor, ext);
 })({});
+var descriptor = {
+    blocks: [
+            ['w', 'Open google popup', 'ogoogs'],
+            ['w', 'Open project with ID %n', 'gotox'],
+            ['w', 'Open packaged project with ID %n', 'goproj'],
+            ['r', 'Get word %n of %s', 'getword', 1, "Hello World"],
+            ['r', 'Encode %s to base64', 'b64', 'test']
+    ],
+    menus: {
+        decenc: ['encode', 'decode'],
+        
+    },
+    url: 'http://info.scratch.mit.edu/WeDo',
+    displayName: 'Advanced Scratch'
+};
